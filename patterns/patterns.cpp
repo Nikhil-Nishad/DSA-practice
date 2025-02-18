@@ -56,7 +56,8 @@ void pattern5(int n)
         cout << '\n';
     }
 }
-void pattern6(int n){
+void pattern6(int n)
+{
     for (int i = 1; i <= n; i++)
     {
         for (int j = 1; j <= n - i + 1; j++)
@@ -65,8 +66,9 @@ void pattern6(int n){
         }
         cout << '\n';
     }
-    }
-void pattern7(int n){
+}
+void pattern7(int n)
+{
     // here
     for (int i = 0; i < n; i++)
     {
@@ -84,8 +86,9 @@ void pattern7(int n){
         }
         cout << endl;
     }
-    }
-void pattern8(int n){
+}
+void pattern8(int n)
+{
     // here
     for (int i = 0; i < n; i++)
     {
@@ -103,12 +106,48 @@ void pattern8(int n){
         }
         cout << endl;
     }
+}
+void pattern9(int n)
+{
+    // here
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 0; j < 2 * i + 1; j++)
+        {
+            cout << "*";
+        }
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            cout << " ";
+        }
+        cout << endl;
     }
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 0; j < 2 * n - 2 * i - 1; j++)
+        {
+            cout << "*";
+        }
+        for (int j = 0; j < i; j++)
+        {
+            cout << " ";
+        }
+        cout << endl;
+    }
+}
 
 int main()
 {
     int n;
-    cin >> n; 
+    cin >> n;
     // Take input normally
     // pattern1(n);
     // pattern2(n);
