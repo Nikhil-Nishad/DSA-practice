@@ -1,4 +1,3 @@
-
 <h1>Data Structures and Algorithms Practice in C++</h1>
 
 <p>Welcome to my DSA practice repository! This repository contains my solutions to various Data Structures and Algorithms problems, implemented in C++. I'm currently focusing on mastering fundamental concepts and working through different loop patterns.</p>
