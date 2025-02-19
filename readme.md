@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSA Practice in C++</title>
-</head>
-<body>
-
 <h1>Data Structures and Algorithms Practice in C++</h1>
 
 <p>Welcome to my DSA practice repository! This repository contains my solutions to various Data Structures and Algorithms problems, implemented in C++. I'm currently focusing on mastering fundamental concepts and working through different loop patterns.</p>
