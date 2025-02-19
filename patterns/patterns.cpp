@@ -182,7 +182,8 @@ void pattern11(int n)
         cout << endl;
     }
 }
-void pattern12(int n){
+void pattern12(int n)
+{
     int space = 2 * (n - 1);
 
     for (int i = 1; i <= n; i++)
@@ -209,7 +210,18 @@ void pattern12(int n){
         space -= 2;
     }
 }
-
+void pattern13(int n)
+{
+    int count = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << count++ << " ";
+        }
+        cout << endl;
+    }
+}
 int main()
 {
     int n;
