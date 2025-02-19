@@ -260,6 +260,41 @@ void pattern16(int n)
         cout << endl;
     }
 }
+void pattern17(int n)
+{
+    // Outer Loop
+    for (int i = 1; i <= n; i++)
+    {
+        char ch = 'A';
+
+        // First Half Space
+        for (int j = 1; j <= n - i; j++)
+        {
+            cout << ' ';
+        }
+
+        // First Half Pattern
+        for (int j = 1; j <= i; j++)
+        {
+            cout << ch++ << ' ';
+        }
+        ch--;
+        // Second Half Pattern
+        for (int j = 0; j < i - 1; j++)
+        {
+            cout << --ch << ' ';
+        }
+
+        // Second Half Space
+        for (int j = 1; j <= i; j++)
+        {
+            cout << ' ';
+        }
+
+        // Line Break
+        cout << endl;
+    }
+}
 int main()
 {
     int n;
