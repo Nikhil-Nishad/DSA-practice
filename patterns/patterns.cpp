@@ -295,6 +295,24 @@ void pattern17(int n)
         cout << endl;
     }
 }
+void pattern18(int n)
+{
+    // Outer Loop
+    for (int i = 1; i <= n; i++)
+    {
+
+        // Setting First Character
+        char ch = 'A';
+        ch += n - 1;
+
+        // Inner Loop For Columns
+        for (int j = 1; j <= i; j++)
+        {
+            cout << ch-- << ' ';
+        }
+        cout << endl;
+    }
+}
 int main()
 {
     int n;
