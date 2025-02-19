@@ -164,7 +164,24 @@ void pattern10(int n)
         cout << endl;
     }
 }
-
+void pattern11(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j < i + 1; j++)
+        {
+            if ((i - j) % 2 == 0)
+            {
+                cout << "1 ";
+            }
+            else
+            {
+                cout << "0 ";
+            }
+        }
+        cout << endl;
+    }
+}
 int main()
 {
     int n;
