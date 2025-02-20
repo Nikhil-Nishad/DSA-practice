@@ -411,6 +411,32 @@ void pattern20(int n)
         cout << endl;
     }
 }
+void pattern21(int n)
+{
+    // Outer Loop
+    for (int i = 1; i <= n; i++)
+    {
+        // First and Last Lines
+        if (i == 1 || i == n)
+        {
+            for (int j = 1; j <= n; j++)
+            {
+                cout << '*';
+            }
+        }
+        // middle lines
+        else
+        {
+            cout << '*';
+            for (int j = 1; j <= n - 2; j++)
+            {
+                cout << ' ';
+            }
+            cout << '*';
+        }
+        cout << endl;
+    }
+}
 int main()
 {
     int n;
