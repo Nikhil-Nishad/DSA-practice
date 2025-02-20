@@ -315,54 +315,100 @@ void pattern18(int n)
 }
 void pattern19(int n)
 {
-        //  Outer Loop
-        for (int i = 1; i <= 2 * n; i++)
+    //  Outer Loop
+    for (int i = 1; i <= 2 * n; i++)
+    {
+
+        // First Half
+        if (i <= n)
         {
-
-            // First Half
-            if (i <= n)
+            // First Star Pattern
+            for (int j = 1; j <= n - i + 1; j++)
             {
-                // First Star Pattern
-                for (int j = 1; j <= n - i + 1; j++)
-                {
-                    cout << '*' << ' ';
-                }
-
-                // Spaces
-                for (int j = 1; j <= 2 * (i - 1); j++)
-                {
-                    cout << ' ';
-                }
-
-                // Second Star Pattern
-                for (int j = 1; j <= n - i + 1; j++)
-                {
-                    cout << '*' << ' ';
-                }
+                cout << '*' << ' ';
             }
-            // Second Half
-            else
+
+            // Spaces
+            for (int j = 1; j <= 2 * (i - 1); j++)
             {
-                // First Star Pattern
-                for (int j = 1; j <= i - n; j++)
-                {
-                    cout << '*' << ' ';
-                }
-
-                // Spaces
-                for (int j = 1; j <= 2 * (2 * n - i); j++)
-                {
-                    cout << ' ';
-                }
-
-                // Second Star Pattern
-                for (int j = 1; j <= i - n; j++)
-                {
-                    cout << '*' << ' ';
-                }
+                cout << ' ';
             }
-            // Line Break
-            cout << endl; 
+
+            // Second Star Pattern
+            for (int j = 1; j <= n - i + 1; j++)
+            {
+                cout << '*' << ' ';
+            }
+        }
+        // Second Half
+        else
+        {
+            // First Star Pattern
+            for (int j = 1; j <= i - n; j++)
+            {
+                cout << '*' << ' ';
+            }
+
+            // Spaces
+            for (int j = 1; j <= 2 * (2 * n - i); j++)
+            {
+                cout << ' ';
+            }
+
+            // Second Star Pattern
+            for (int j = 1; j <= i - n; j++)
+            {
+                cout << '*' << ' ';
+            }
+        }
+        // Line Break
+        cout << endl;
+    }
+}
+void pattern20(int n)
+{
+    //  Outer Loop
+    for (int i = 1; i <= (2 * n - 1); i++)
+    {
+        if (i <= n)
+        {
+            // First Half Star
+            for (int j = 1; j <= i; j++)
+            {
+                cout << '*' << ' ';
+            }
+            // Spaces
+            for (int j = 1; j <= 2 * (n - i); j++)
+            {
+                cout << ' ';
+            }
+
+            // Second Half Star
+            for (int j = 1; j <= i; j++)
+            {
+                cout << '*' << ' ';
+            }
+        }
+        else
+        {
+            // First Half Star
+            for (int j = 1; j <= (2 * n - i); j++)
+            {
+                cout << '*' << ' ';
+            }
+            // Spaces
+            for (int j = 1; j <= 2 * (i - n); j++)
+            {
+                cout << ' ';
+            }
+
+            // Second Half Star
+            for (int j = 1; j <= (2 * n - i); j++)
+            {
+                cout << '*' << ' ';
+            }
+        }
+        cout << endl;
     }
 }
 int main()
