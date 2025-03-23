@@ -29,3 +29,27 @@ int evenlyDivides(int n)
     }
     return count;
 }
+
+// 2. https://www.naukri.com/code360/problems/count-digits_8416387?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+
+int countDigits(int n)
+{
+    // Write your code here.
+    int count = 0;
+    int temp = 0;
+    int originalnum = n;
+    while (n > 0)
+    {
+        temp = n % 10;
+        if (temp > 0 && originalnum % temp == 0)
+        {
+            count++;
+        }
+        n = n / 10;
+    }
+    return count;
+}
+
+
+
+
